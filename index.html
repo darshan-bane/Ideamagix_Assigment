@@ -11,9 +11,19 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>IdeaMagix</title>
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link rel="icon" href="assest/images/favicon.png">
+
 </head>
 
 <body>
+
+    <div id="preloader">
+
+    </div>
     <!--===== Desktop Header =====-->
     <header>
         <div class="topbar">
@@ -59,7 +69,7 @@
 
         <nav class="navbar">
             <ul class="nav-item-ul">
-                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="#">About Us</a></li>
                 <li class="nav-item"><a href="#">
                         <div class="dd_container">
@@ -88,7 +98,7 @@
                         </div>
                     </a></li>
                 <li class="nav-item"><a href="#">Hospitals</a></li>
-                <li class="nav-item"><a href="#">FAQs</a></li>
+                <li class="nav-item"><a href="#faq">FAQs</a></li>
                 <li class="nav-item"><a href="#">Blogs</a></li>
                 <li class="nav-item"><a href="#">Request A Quote</a></li>
             </ul>
@@ -139,7 +149,7 @@
                                 </div>
                             </a></li>
                         <li class="nav-item"><a href="#">Hospitals</a></li>
-                        <li class="nav-item"><a href="#">FAQs</a></li>
+                        <li class="nav-item"><a href="#faq">FAQs</a></li>
                         <li class="nav-item"><a href="#">Blogs</a></li>
                         <li class="nav-item"><a href="#">Request A Quote</a></li>
                     </ul>
@@ -180,13 +190,13 @@
     <!--======== tabs nav ==========-->
     <div class="tabs_nav">
         <ul>
-            <li><a href="">Overview</a></li>
-            <li><a href="">Eligibility</a></li>
-            <li><a href="">Prepartion</a></li>
-            <li><a href="">About Treatment</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#prepartion">Prepartion</a></li>
+            <li><a href="#about-treatment">About Treatment</a></li>
             <li><a href="">Post-Treatment Care</a></li>
             <li><a href="">Recovery Tips</a></li>
-            <li><a href="">FAQs</a></li>
+            <li><a href="#faq">FAQs</a></li>
             <li><a href="">Patient Story</a></li>
         </ul>
     </div>
@@ -194,7 +204,7 @@
 
     <!--======== Treatment overview ==========-->
     <div class="container">
-        <div class="treatment_overview_content">
+        <div class="treatment_overview_content" id="overview">
             <h1>Treatment Overview <span style="width: 15px; color: #e00016;">.</span></h1>
             <div class="space20"></div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti omnis, sed, dolor id quos sint alias
@@ -218,7 +228,7 @@
 
 
     <!--======== Eligibility For Treatment ==========-->
-    <div class="container container2">
+    <div class="container container2" id="eligibility">
         <div class="eligibility_for_treatment">
             <h1>Eligibilty For Treatment <span style="width: 15px; color: #e00016;">.</span></h1>
             <div class="space20"></div>
@@ -239,7 +249,7 @@
             <hr class="dotted-line">
 
             <!--======== Prepartion Before Treatment ==========-->
-            <div>
+            <div id="prepartion">
                 <div class="space50"></div>
                 <h1>Prepartion Before Treatment <span style="width: 15px; color: #e00016;">.</span></h1>
                 <div class="space20"></div>
@@ -263,7 +273,7 @@
             <hr class="dotted-line">
 
             <!--======== About Treatment ==========-->
-            <div>
+            <div id="about-treatment">
                 <div class="space50"></div>
                 <h1>About Treatment <span style="width: 15px; color: #e00016;">.</span></h1>
                 <div class="space20"></div>
@@ -288,7 +298,7 @@
 
 
             <!--======== FAQs ==========-->
-            <div class="space50"></div>
+            <div class="space50" id="faq"></div>
             <div class="FAQs">
                 <h1>Treatment FAQs<span style="width: 15px; color: #e00016;">.</span></h1>
                 <div class="space20"></div>
@@ -350,6 +360,25 @@
                 </div>
                 <hr>
             </div>
+            <div class="space50"></div>
+            <hr class="dotted-line">
+
+
+            <!--======== Testimonial ==========-->
+            <div class="space50"></div>
+            <div class="testimonial">
+                <h1>Patient Storis & Videos<span style="width: 15px; color: #e00016;">.</span></h1>
+                <div class="owl-carousel">
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                </div>
+            </div>
+
 
         </div>
         <div class="contactform">
@@ -368,13 +397,134 @@
     </div>
 
 
+    <!--================= Contact Us =============-->
+    <div class="contact_us">
+        <h3>Stay healthy and strong to enjoy life</h3>
+        <div class="space20"></div>
+        <h1 class="h1">We have team of healthcare experts</h1>
+        <div class="space20"></div>
+        <div class="contact_info">
+            <div>
+                <a href="#" class="main_button footer_btn" style="background: #0a60d1;">Get In Touch</a>
+            </div>
+            <div class="vertical-line"></div>
+            <div>
+                <h2 class="contact_number"><a href="">+91 864 531 5675</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============= Footer ============== -->
+    <footer class="footer ">
+        <div class="footer_item">
+            <div class="space20"></div>
+            <h3>Important Links</h3>
+            <div class="space10"></div>
+            <ul class="footer-items">
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Home</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> About Us</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> FAQs</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Blog</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <div class="space20"></div>
+            <h3>Important Links</h3>
+            <div class="space10"></div>
+            <ul class="footer-items">
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Home</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> About Us</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> FAQs</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Blog</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <div class="space20"></div>
+            <h3>Important Links</h3>
+            <div class="space10"></div>
+            <ul class="footer-items">
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Home</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> About Us</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> FAQs</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Blog</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <div style="background: #ffffff; color: #000000; padding:10px; border-radius: 8px;" class="footer_card">
+                <div class="contact_details_topbar p2">
+                    <div><i class="fa-solid fa-envelope-open-text fa-lg p2" style="color: #e00016;"></i></div>
+                    <div>
+                        <p>Email Us On</p>
+                        <h4>info@mediretreats.com</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+
+            <div class="space20"></div>
+            <h3>Important Links</h3>
+            <div class="space10"></div>
+            <ul class="footer-items">
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Home</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> About
+                        Us</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> FAQs</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Blog</a>
+                </li>
+                <li><a href=""><span><i class="fa-solid fa-minus fa-xs" style="color: #2ea7ee;"></i></span> Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <hr>
+
+    </footer>
 
 
+
+
+    <!-- Owl carousel -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
 
     <script src="assest/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            console.log("Page loaded");
+            loader.style.display = "none";
+        });
+    </script>
+
 </body>
 
 </html>
